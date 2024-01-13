@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+  </head>
+  <body style="overflow: hidden">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="d-none d-md-block sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <!-- Sidebar icons -->
+              <li class="nav-item sidebar-icon">
+                <span class="nav-item handong-icon">
+                  <img src="handongLogo-icon.png" alt="handongLogo" />
+                </span>
+              </li>
+              <li class="nav-item sidebar-icon">
+                <span class="nav-item myprofile-icon">
+                  <img src="myprofile.png" alt="myprofile" />
+                </span>
+              </li>
+              <li class="nav-item sidebar-icon">
+                <span data-feather="check-circle"></span>
+              </li>
+              <li class="nav-item sidebar-icon" id="file-text-icon">
+                <span data-feather="file-text"></span>
+              </li>
+              <li class="nav-item sidebar-icon">
+                <span data-feather="calendar"></span>
+              </li>
+              <li class="nav-item sidebar-icon">
+                <span data-feather="inbox"></span>
+              </li>
+              <li class="nav-item sidebar-icon">
+                <span data-feather="help-circle"></span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main role="main" class="col-md-11 ml-sm-auto col-lg-11-5 px-md-4">
+          <div class="top-bar">
+            <div class="dashboard-title">Dashboard</div>
+            <div class="icons">
+              <span data-feather="plus" style="margin-right: 40px"></span>
+              <span
+                data-feather="check-square"
+                style="margin-right: 40px"
+              ></span>
+              <span data-feather="bell" style="margin-right: 40px"></span>
+              <span data-feather="more-vertical"></span>
+            </div>
+          </div>
+          <div style="height: 1px; background-color: grey"></div>
+          <div class="main-content">
+            <div class="main-message">Nothing More To Do</div>
+            <div class="sub-message">Scroll up to see your history!</div>
+            <!-- Add To-Do button -->
+            <button class="btn btn-add-to-do">Add To-to</button>
+            <div class="bottom-line"></div>
+            <div class="bottom-text">Open Source LMS</div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
