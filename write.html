@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>course</title>
-    <link rel="stylesheet" href="course.css" />
+    <title>Courses</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="write.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
   </head>
-  <body>
+  <body style="overflow: hidden">
     <div class="container-fluid">
       <div class="row">
         <nav class="d-none d-md-block sidebar">
-          <div class="col-md-1 sidebar-sticky">
+          <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <!-- Sidebar icons -->
               <li class="nav-item sidebar-icon">
@@ -35,6 +45,7 @@
                   <hr />
                 </div>
                 <div class="course-list">
+                  <!-- 각 강의는 제목(title)과 소제목(subtitle)으로 구성됩니다 -->
                   <div class="course-item">
                     <div class="course-title">Discrete Mathematics</div>
                     <div class="course-subtitle">2023 Spring Semester</div>
@@ -54,24 +65,43 @@
             </ul>
           </div>
         </nav>
-        <!-- 메인 컨텐츠 영역을 Bootstrap 그리드 클래스로 정의 -->
         <main role="main" class="col-md-11 ml-sm-auto col-lg-11-5 px-md-4">
           <div class="board-header">
-            <h1>Practical Project1 01</h1>
-            <button class="write-btn">+ Write</button>
+            <h1>Practical Project1 01 > Practical Project1 01</h1>
           </div>
-          <div class="search-bar">
-            <input type="text" placeholder="Title/Author" />
-            <button class="search-btn">Search</button>
+          <div class="write">Write a post</div>
+          <div class="title-bar">
+            <input type="text" />
           </div>
-          <div class="post-list">
-            <p>No posts are registered.</p>
+          <div class="row">
+            <div class="col-md-12">
+              <textarea id="markdown-editor"></textarea>
+            </div>
+          </div>
+          <div id="file-guide">Attatch a file</div>
+          <div class="file-input">
+            <input
+              type="file"
+              id="file-input"
+              name="file-input"
+              accept="image/png, image/jpeg"
+            />
+          </div>
+          <br />
+          <hr />
+          <div class="button">
+            <button class="cancel-btn">Cancel</button>
+            <button class="save-btn">Save</button>
           </div>
         </main>
       </div>
     </div>
-    <!-- Include Feather Icons JavaScript for icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <script src="write.js"></script>
     <script src="dashboard.js"></script>
+    <script>
+      var simplemde = new SimpleMDE({
+        element: document.getElementById("markdown-editor"),
+      });
+    </script>
   </body>
 </html>
