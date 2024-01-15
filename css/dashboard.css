@@ -1,32 +1,5 @@
-/* dashboard.css */
-@media (min-width: 992px) {
-  .col-lg-11-5 {
-    flex: 0 0 95.833333%; /* 11.5 / 12 = 0.95833333 */
-    max-width: 95.833333%; /* 11.5 / 12 = 0.95833333 */
-  }
-}
-
 body {
   font-family: "Arial", sans-serif;
-}
-
-.course-list {
-  padding: 0 16px; /* 강의 목록의 패딩 지정 */
-}
-
-.course-item {
-  padding: 8px 0; /* 강의 항목의 위아래 패딩 지정 */
-}
-
-.course-title {
-  font-size: 16px; /* 제목의 폰트 크기 지정 */
-  font-weight: bold; /* 제목의 폰트 두께 지정 */
-  color: #333; /* 제목 텍스트 색상 지정 */
-}
-
-.course-subtitle {
-  font-size: 14px; /* 소제목의 폰트 크기 지정 */
-  color: #666; /* 소제목 텍스트 색상 지정 */
 }
 
 .main-content {

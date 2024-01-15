@@ -1,3 +1,10 @@
+@media (min-width: 992px) {
+  .col-lg-11-5 {
+    flex: 0 0 95.833333%; /* 11.5 / 12 = 0.95833333 */
+    max-width: 95.833333%; /* 11.5 / 12 = 0.95833333 */
+  }
+}
+
 .sidebar {
   background-color: #00579c;
   color: white;
@@ -40,9 +47,10 @@
 }
 
 .sidebar-header {
-  padding: 10px;
+  padding: 20px;
   color: #333;
   text-align: left; /* 헤더 텍스트 중앙 정렬 */
+  border-bottom: 1px solid #ddd;
 }
 
 .sidebar-header h2 {
@@ -67,14 +75,13 @@
 }
 
 .course-title {
-  font-size: 16px; /* 제목의 폰트 크기 지정 */
-  font-weight: bold; /* 제목의 폰트 두께 지정 */
-  color: #333; /* 제목 텍스트 색상 지정 */
+  font-size: 16px;
+  color: #008ee2; /* 텍스트 색상 */
 }
 
 .course-subtitle {
-  font-size: 14px; /* 소제목의 폰트 크기 지정 */
-  color: #666; /* 소제목 텍스트 색상 지정 */
+  font-size: 12px; /* 소제목의 폰트 크기 지정 */
+  color: #2d3b45; /* 소제목 텍스트 색상 지정 */
 }
 
 .lecture-sidebar {
@@ -83,10 +90,11 @@
   top: 0;
   width: 420px;
   height: 100%;
-  background-color: #f8f9fa;
+  background-color: white;
   border-right: 1px solid #dee2e6;
   transition: left 0.3s;
-  z-index: 1000; /* 기존 사이드바 위에 표시 */
+  z-index: 1000;
+  padding: 10px;
   box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
 }
 
@@ -94,11 +102,4 @@
 .content-reduced {
   transition: margin-left 0.3s;
   margin-left: 250px; /* `lecture-sidebar` 너비 만큼 추가 */
-}
-
-.course-title {
-  /* 버튼에 적용할 스타일 */
-  color: blue; /* 텍스트 색상 */
-  background-color: #f8f9fa; /* 배경 색상 */
-  border: none;
 }

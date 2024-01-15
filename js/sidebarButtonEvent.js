@@ -49,3 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "write.html"; // 이동하려는 페이지의 URL
   });
 });
+
+document
+  .getElementById("dashboard-icon")
+  .addEventListener("click", function () {
+    window.location.href = "dashboard.html";
+  });
+
+document.getElementById("handong-icon").addEventListener("click", function () {
+  window.location.href = "login.html";
+});
