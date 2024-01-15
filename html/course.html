@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Courses</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="dashboard.css" />
-    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="/css/course.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
   </head>
-  <body style="overflow: hidden">
+  <body style="overflow: visible">
     <div class="container-fluid">
       <div class="row">
         <nav class="d-none d-md-block sidebar">
@@ -21,12 +21,12 @@
               <!-- Sidebar icons -->
               <li class="nav-item sidebar-icon">
                 <span class="nav-item handong-icon">
-                  <img src="handongLogo-icon.png" alt="handongLogo" />
+                  <img src="/img/handongLogo-icon.png" alt="handongLogo" />
                 </span>
               </li>
               <li class="nav-item sidebar-icon">
                 <span class="nav-item myprofile-icon">
-                  <img src="myprofile.png" alt="myprofile" />
+                  <img src="/img/myprofile.png" alt="myprofile" />
                 </span>
               </li>
               <li class="nav-item sidebar-icon">
@@ -39,12 +39,11 @@
                 <div class="sidebar-header">
                   <h4>Courses</h4>
                   <hr />
-                  <!-- 선을 그어 헤더를 나머지 내용과 구분합니다 -->
                 </div>
                 <div class="course-list">
                   <!-- 각 강의는 제목(title)과 소제목(subtitle)으로 구성됩니다 -->
                   <div class="course-item">
-                    <button class="course-title">Discrete Mathematics</button>
+                    <div class="course-title">Discrete Mathematics</div>
                     <div class="course-subtitle">2023 Spring Semester</div>
                   </div>
                   <!-- 강의 목록 계속... -->
@@ -63,30 +62,22 @@
           </div>
         </nav>
         <main role="main" class="col-md-11 ml-sm-auto col-lg-11-5 px-md-4">
-          <div class="top-bar">
-            <div class="dashboard-title">Dashboard</div>
-            <div class="icons">
-              <span data-feather="plus" style="margin-right: 40px"></span>
-              <span
-                data-feather="check-square"
-                style="margin-right: 40px"
-              ></span>
-              <span data-feather="bell" style="margin-right: 40px"></span>
-              <span data-feather="more-vertical"></span>
-            </div>
+          <div class="board-header">
+            <h1>Practical Project1 01 > Practical Project1 01</h1>
           </div>
-          <div style="height: 1px; background-color: grey"></div>
-          <div class="main-content">
-            <div class="main-message">Nothing More To Do</div>
-            <div class="sub-message">Scroll up to see your history!</div>
-            <!-- Add To-Do button -->
-            <button class="btn btn-add-to-do">Add To-to</button>
-            <div class="bottom-line"></div>
-            <div class="bottom-text">Open Source LMS</div>
+          <div class="button-container">
+            <div class="search-bar">
+              <input type="text" placeholder="Title/Author" />
+              <button class="search-btn">Search</button>
+            </div>
+            <button class="write-btn">+ Write</button>
+          </div>
+          <div class="post-list">
+            <p>No posts are registered.</p>
           </div>
         </main>
       </div>
     </div>
-    <script src="sidebarButtonEvent.js"></script>
+    <script src="/js/sidebarButtonEvent.js"></script>
   </body>
 </html>
